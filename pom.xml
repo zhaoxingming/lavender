@@ -21,6 +21,18 @@
   <dependencyManagement>
   	<dependencies>
   		<!-- spring start -->
+  			<!-- spring-context import the spring-core,spring-beans,spring-aop,spring-expression -->
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-context</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  			<!-- spring-context import the spring-jdbc,spring-tx-->
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-orm</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
   		<dependency>
   			<groupId>org.springframework</groupId>
   			<artifactId>spring-webmvc</artifactId>
